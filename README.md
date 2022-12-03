@@ -19,7 +19,7 @@ After that download the repo and copy over the corrosponding files.
 Then create the folder where the cached files are going to be stored.
 `mkdir /var/cache/nginx` and `mkdir /var/cache/nginx/cache`
 
-At last change the ipadres in the `/etc/bind/named.conf` file to ipadres you've given your vm.
+At last change the ipadres in the `/etc/bind/db-test.local` file to ipadres you've given your vm.
 Then restart all the services with `systemctl restart nginx` and `systemctl restart bind9`.
 
 Check if they are running correctly with `systemctl status nginx` and `systemctl status bind9`.
@@ -28,3 +28,12 @@ If not please check if you followed the manual correctly.
 
 Now set change the default DNS server on your DHCP server/Home router and your done!
  
+
+# How can i test if it's working?
+
+Get a windows machine that needs a windows update and check if your disk of your vm is getting more filled with data.
+
+
+# What if it doesn't work even thoug i've followed every step.
+
+No worries, you can always create a ticket!
